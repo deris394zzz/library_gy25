@@ -10,15 +10,15 @@
 
 
 #endif /* SRC_GYRO_H_ */
+#include <stdint.h>
+#include "stm32l4xx_hal_uart.h"
 
 typedef struct
 {
     int16_t Gyro_X_RAW;
     int16_t Gyro_Y_RAW;
     int16_t Gyro_Z_RAW;
-    double Gx;
-    double Gy;
-    double Gz;
+
 } gy25_t;
 
 
